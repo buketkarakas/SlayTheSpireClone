@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca5diqxpgp8mb"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_ck787"]
+[ext_resource type="Texture2D" uid="uid://cpydvk8mq66o5" path="res://art/tile_0087.png" id="1_e725a"]
+[ext_resource type="PackedScene" uid="uid://cp40u66ytcjhq" path="res://scenes/ui/stats_ui.tscn" id="2_sxthg"]
+
+[node name="Player" type="Node2D" groups=["player"]]
+script = ExtResource("1_ck787")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_e725a")
+
+[node name="StatsUI" parent="." instance=ExtResource("2_sxthg")]
+offset_top = 9.0
+offset_bottom = 25.0
